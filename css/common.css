@@ -12,7 +12,10 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 .gallery {
   display: flex;
   width: 1128px;
@@ -20,8 +23,4 @@ body {
   flex-wrap: wrap;
   row-gap: 48px;
   padding: 0;
-}
-.img-list-item {
-  width: 360px;
-  height: 300px;
 }
