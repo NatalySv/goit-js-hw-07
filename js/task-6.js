@@ -24,16 +24,20 @@ function handleCreate(event) {
 
 function createBoxes(amount) {
   let counter = 30;
+  const markup = [];
   for (let i = 1; i <= amount; i++) {
     const color = getRandomHexColor();
-
-    const box = document.createElement('div');
-    box.style.width = `${counter}px`;
-    box.style.height = `${counter}px`;
-    box.style.backgroundColor = color;
-    boxes.append(box);
+    markup.push(
+      `<div style="width: ${counter}px; height: ${counter}px; background-color: ${color}"></div>`
+    );
+    // const box = document.createElement('div');
+    // box.style.width = `${counter}px`;
+    // box.style.height = `${counter}px`;
+    // box.style.backgroundColor = color;
+    // boxes.append(box);
     counter += 10;
   }
+  boxes.innerHTML = markup.join('');
 }
 
 buttonDestroy.addEventListener('click', destroyBoxes);
