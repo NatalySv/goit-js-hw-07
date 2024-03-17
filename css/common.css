@@ -194,6 +194,7 @@ h1 {
   width: 486px;
   height: 104px;
   background-color: #f6f6fe;
+  margin-bottom: 16px;
 }
 
 #controls input {
@@ -218,4 +219,15 @@ button[data-destroy] {
 
 button[data-destroy]:hover {
   background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 160px;
+  background-color: #f6f6fe;
 }
