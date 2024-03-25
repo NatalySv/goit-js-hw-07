@@ -230,4 +230,8 @@ button[data-destroy]:hover {
   width: 486px;
   height: 160px;
   background-color: #f6f6fe;
+  overflow: visible;
+}
+#boxes > div {
+  flex-shrink: 0;
 }
